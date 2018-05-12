@@ -14,6 +14,9 @@ nav{
     box-sizing: border-box;
     transition: 0.5s;
 }
+.black {
+    background: rgba(0, 0, 0, 0.479);
+}
 nav .logo{
     float: left;
 }
@@ -49,4 +52,7 @@ section.sec1{
     height: 100vh;
     background: url("../media/1.jpg");
     background-size: cover;
+}
+section.sec1 p{
+    padding: 100px;
 }
