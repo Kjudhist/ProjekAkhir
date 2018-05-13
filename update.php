@@ -15,7 +15,7 @@ if(isset($_POST['save'])){
         $r = mysqli_query($con, $q);
     }
     if($r){
-        header('location:profile.php');
+        header('location:loginRegister.php');
     }else{
         header('location:profilEdit.php');
     }
