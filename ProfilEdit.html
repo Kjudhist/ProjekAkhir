@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/styleProfil.css">
+    <link rel="stylesheet" type="text/css" href="css/styleProfilEdit.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700,800' rel='stylesheet'
         type='text/css'>
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -51,45 +51,45 @@
         <center>
             <div class="portfoliocard">
                 <div class="coverphoto"></div>
-                <div class="profile_picture" style="background-image: url(media/3.jpg)"></div>
+                <div class="profile_picture" style="background-image: url(media/3.jpg)">
+                </div>
                 <div class="left_col">
-                    <div class="tomboledit">
-                        <div class="tombol">
-                            <a href="#" class="nostyle">Edit profile</a>
-                        </div>
-                    </div>
-                    <div class="tombollogout">
-                        <div class="tombol">
-                            <a href="#" class="nostyle">Log out</a>
-                        </div>
-                    </div>
                 </div>
                 <div class="right_col">
-                    <h2 class="name">Kevin</h2>
-                    <h3 class="location">Seoul</h3>
+                    <h2 class="name">_</h2>
+                    <h3 class="location">_</h3>
                     <table>
                         <tr>
                             <td>
                                 <ul class="information">
                                     <li>username</li>
-                                    <li>b</li>
+                                    <li>Nama</li>
                                     <li>email</li>
                                     <li>Phone</li>
+                                    <li>Password</li>
                                 </ul>
                             </td>
                             <td>
                                 <ul class="contact_information">
-                                    <li class="username">Kjudhist</li>
-                                    <li class="website">
-                                        <a class="nostyle" href="#">www.apple.com</a>
+
+                                    <li class="formDiv">
+                                        <input type="text" placeholder="Username" name="username"/></li>
+                                    <li class="formDiv">
+                                        <input type="name" placeholder="nama" name="nama"/></li>
                                     </li>
-                                    <li class="email">john.doe@apple.com</li>
-                                    <li class="phone">1-(732)-757-2923</li>
+                                    <li class="formDiv">
+                                        <input type="email" placeholder="Email" name="email"/></li>
+                                    <li class="formDiv">
+                                            <input type="text" placeholder="phone" name="phone"/></li>
+                                    <li class="formDiv">
+                                        <input type="password" placeholder="Password" name="password"/>
+                                    </li>
                                 </ul>
                             </td>
                         </tr>
                     </table>
-
+                    <div class="formDiv">
+                    <input type="submit" value="Save Data"/></div>
                 </div>
             </div>
         </center>
@@ -98,5 +98,4 @@
     <section class="sec4"></section>
     <section class="sec5"></section>
 </body>
-
 </html>
