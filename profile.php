@@ -1,5 +1,19 @@
-<html>
+<?php
+include("koneksi.php");
+    session_start();
+    if (empty($_SESSION['username'])){
+        header("location:loginRegister.php");
+    }else{
+        $q=mysqli_query($con, "select * from user where username='".$_SESSION['username']."'");
+        $r=$q->fetch_array();
+        $_SESSION['blog'] = $r['blog'];
+        $_SESSION['email'] = $r['email'];
+        $_SESSION['phone'] = $r['phone'];
+            
+    }
+?>
 
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,31 +74,31 @@
                     </div>
                     <div class="tombollogout">
                         <div class="tombol">
-                            <a href="loginRegister.php" class="nostyle">Log out</a>
+                            <a href="logout.php" class="nostyle">Log out</a>
                         </div>
                     </div>
                 </div>
                 <div class="right_col">
-                    <h2 class="name">Kevin</h2>
+                    <h2 class="name"> <?php echo $_SESSION['username'];?></h2>
                     <h3 class="location">Seoul</h3>
                     <table>
                         <tr>
                             <td>
                                 <ul class="information">
                                     <li>username</li>
-                                    <li>b</li>
+                                    <li>blog</li>
                                     <li>email</li>
-                                    <li>Phone</li>
+                                    <li>phone</li>
                                 </ul>
                             </td>
                             <td>
                                 <ul class="contact_information">
-                                    <li class="username">Kjudhist</li>
+                                    <li class="username"><?php echo $_SESSION['username'];?></li>
                                     <li class="website">
-                                        <a class="nostyle" href="#">www.apple.com</a>
+                                        <a class="nostyle" href="#"><?=$_SESSION['blog'];?></a>
                                     </li>
-                                    <li class="email">john.doe@apple.com</li>
-                                    <li class="phone">1-(732)-757-2923</li>
+                                    <li class="email"><?=$_SESSION['email'];?></li>
+                                    <li class="phone"><?=$_SESSION['phone'];?></li>
                                 </ul>
                             </td>
                         </tr>
