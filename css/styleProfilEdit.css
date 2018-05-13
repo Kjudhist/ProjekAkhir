@@ -8,7 +8,7 @@ a.nostyle {
 div.portfoliocard {
     position: relative;
     height: 450px;
-    width: 400px;
+    width: 500px;
     overflow: hidden;
     z-index: 100;
 }
