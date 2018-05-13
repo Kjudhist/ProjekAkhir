@@ -70,6 +70,7 @@ session_start();
                 <div class="right_col">
                     <h2 class="name">_</h2>
                     <h3 class="location">_</h3>
+                    <form id="edit" action="update.php" method="POST">
                     <table>
                         <tr>
                             <td>
@@ -101,7 +102,8 @@ session_start();
                         </tr>
                     </table>
                     <div class="formDiv">
-                    <input type="submit" value="Save Data" href="update.php"/></div>
+                    <input type="submit" value="Save Data"/></div>
+                    </form>
                 </div>
             </div>
         </center>
