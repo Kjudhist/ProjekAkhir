@@ -6,9 +6,6 @@ session_start();
     }else{
         $q=mysqli_query($con, "select * from user where username='".$_SESSION['username']."'");
         $r=$q->fetch_array();
-        $_SESSION['blog'] = $r['blog'];
-        $_SESSION['email'] = $r['email'];
-        $_SESSION['phone'] = $r['phone'];
     }
 ?>
 <html>
@@ -102,7 +99,7 @@ session_start();
                         </tr>
                     </table>
                     <div class="formDiv">
-                    <input type="submit" value="Save Data" href="update.php"/></div>
+                    <input type="submit" value="Save Data" name="save" href="update.php"/></div>
                     </form>
                 </div>
             </div>

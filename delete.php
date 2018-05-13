@@ -4,7 +4,7 @@ include("koneksi.php");
     if (empty($_SESSION['username'])){
         header("location:loginRegister.php");
     }else{
-        $q=mysqli_query($con, "DELETE from user where username='".$_SESSION['username']."'");
+        $q=mysqli_query($con, "select * from user where username='".$_SESSION['username']."'");
     }
 ?>
 

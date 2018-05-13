@@ -6,9 +6,6 @@ include("koneksi.php");
     }else{
         $q=mysqli_query($con, "select * from user where username='".$_SESSION['username']."'");
         $r=$q->fetch_array();
-        $_SESSION['blog'] = $r['blog'];
-        $_SESSION['email'] = $r['email'];
-        $_SESSION['phone'] = $r['phone'];
     }
 ?>
 

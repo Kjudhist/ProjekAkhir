@@ -9,6 +9,6 @@ include("koneksi.php");
     if($q){
         header('location:loginRegister.php');
      }else{
-      header('location:delete.php');
+        header('location:delete.php');
      }
 ?>
