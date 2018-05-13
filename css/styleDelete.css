@@ -135,7 +135,7 @@ div.portfoliocard div.tombol:hover {
 .formHapus input[type="submit"]:hover {
     background: #f00;
 }
-.formDiv input[type="submit"] {
+.formBatal input[type="submit"] {
     width: 100%;
     padding: 10px 0;
     color: #fff;
@@ -144,6 +144,6 @@ div.portfoliocard div.tombol:hover {
     background: #f00;
     transition: 0.2s ease;
 }
-.formDiv input[type="submit"]:hover {
+.formBatal input[type="submit"]:hover {
     background: rgb(136, 255, 0);
 }

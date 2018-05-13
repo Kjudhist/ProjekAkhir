@@ -71,7 +71,7 @@ include("koneksi.php");
                 <div class="formHapus"><input type="submit" value="Hapus"/></div>
             </div>
             <div class="right_col">
-                <div class="formDiv"><input type="submit" value="Tidak"/></div>
+                <div class="formBatal"><input type="submit" value="Tidak"/></div>
             </div>
         </div>
         </center>
