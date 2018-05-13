@@ -67,12 +67,14 @@ include("koneksi.php");
                 <h1 style="color: white">DELETE</h1>
                 <h2 class="name"> apakah anda ingin menghapus akun "<?php echo $_SESSION['username'];?>" </h2>
             </div>
+            <form id="delete" method="post">
             <div class="left_col">
-                <div class="formHapus"><input type="submit" value="Hapus"/></div>
+                <div class="formHapus"><input type="submit" value="Hapus" href="profile.php"/></div>
             </div>
             <div class="right_col">
-                <div class="formBatal"><input type="submit" value="Tidak"/></div>
+                <div class="formBatal"><input type="cancel" value="Tidak"/></div>
             </div>
+            </form>
         </div>
         </center>
     </section>
