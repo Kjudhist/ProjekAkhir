@@ -4,12 +4,7 @@ include("koneksi.php");
     if (empty($_SESSION['username'])){
         header("location:loginRegister.php");
     }else{
-        $q=mysqli_query($con, "select * from user where username='".$_SESSION['username']."'");
-        $r=$q->fetch_array();
-        $_SESSION['blog'] = $r['blog'];
-        $_SESSION['email'] = $r['email'];
-        $_SESSION['phone'] = $r['phone'];
-            
+        $q=mysqli_query($con, "DELETE from user where username='".$_SESSION['username']."'");
     }
 ?>
 
@@ -67,12 +62,14 @@ include("koneksi.php");
                 <h1 style="color: white">DELETE</h1>
                 <h2 class="name"> apakah anda ingin menghapus akun "<?php echo $_SESSION['username'];?>" </h2>
             </div>
-            <form id="delete" method="post">
+            <form id="delete" action="delacc.php" method="post">
             <div class="left_col">
-                <div class="formHapus"><input type="submit" value="Hapus" href="profile.php"/></div>
+                <div class="formHapus"><input type="submit" value="Hapus"/></div>
             </div>
+            </form>
+            <form id="delete" action="profile.php" method="post">
             <div class="right_col">
-                <div class="formBatal"><input type="cancel" value="Tidak"/></div>
+                <div class="formBatal"><input type="submit" value="Tidak"/></div>
             </div>
             </form>
         </div>
