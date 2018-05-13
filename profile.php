@@ -58,7 +58,7 @@ include("koneksi.php");
                         <a href="#">Service</a>
                     </li>
                     <li>
-                        <a href="Profil.php" class="active">Profile</a>
+                        <a href="profile.php" class="active">Profile</a>
                     </li>
                 </ul>
             </nav>
