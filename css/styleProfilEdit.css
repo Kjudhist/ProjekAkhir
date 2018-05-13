@@ -131,13 +131,11 @@ div.portfoliocard ul.contact_information li:before {
     color: #fff;
     font-weight: 500;
     border: none;
-    background: cadetblue;
-    border-radius: 3px;
-    cursor: pointer;
+    background: #f00;
     transition: 0.2s ease;
 }
 .formDiv input[type="submit"]:hover {
-    background: #f00;
+    background: rgb(136, 255, 0);
 }
 div.portfoliocard ul.information {
     margin-top: 20px;
