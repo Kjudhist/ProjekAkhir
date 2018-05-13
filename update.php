@@ -1,5 +1,5 @@
 <?php
-
+include("koneksi.php");
 $username   = $_POST['username'];
 $blog       = $_POST['blog'];
 $email      = $_POST['email'];

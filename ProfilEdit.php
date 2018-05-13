@@ -55,7 +55,7 @@ session_start();
                         <a href="#">Service</a>
                     </li>
                     <li>
-                        <a href="profile.php">Profile</a>
+                    <a href="profile.php">Profile</a>
                     </li>
                 </ul>
             </nav>
@@ -102,7 +102,7 @@ session_start();
                         </tr>
                     </table>
                     <div class="formDiv">
-                    <input type="submit" value="Save Data"/></div>
+                    <input type="submit" value="Save Data" href="update.php"/></div>
                     </form>
                 </div>
             </div>

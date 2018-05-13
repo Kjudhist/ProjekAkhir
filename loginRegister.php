@@ -20,16 +20,16 @@
           <div class="formOther"><a class="regBtn" href="#">Close</a></div>
         </div>
       </form>
-      <form id="login"action="loginCheck.php" method="post">
+      <form id="login" action="loginCheck.php" method="post">
         <div class="formHead">
           <h1>SELAMAT DATANG</h1>
           <p>Silahkan masukan username dan password anda</p>
         </div>
         <div class="formDiv">
-          <input type="text" placeholder="Username" name="username"/>
+          <input type="text" placeholder="Username" name="username" required/>
         </div>
         <div class="formDiv">
-          <input type="password" placeholder="Password" name="password"/>
+          <input type="password" placeholder="Password" name="password" required/>
         </div>
         <div class="formDiv">
           <input type="submit" value="LOGIN"/>
