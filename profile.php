@@ -13,6 +13,7 @@ include("koneksi.php");
     }
 ?>
 
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -57,7 +58,7 @@ include("koneksi.php");
                         <a href="#">Service</a>
                     </li>
                     <li>
-                        <a href="Profil.html" class="active">Profile</a>
+                        <a href="Profil.php" class="active">Profile</a>
                     </li>
                 </ul>
             </nav>
@@ -77,10 +78,15 @@ include("koneksi.php");
                             <a href="logout.php" class="nostyle">Log out</a>
                         </div>
                     </div>
+                    <div class="tomboldeleteacc">
+                        <div class="tombol">
+                            <a href="delete.php" class="nostyle">Delete Account</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="right_col">
                     <h2 class="name"> <?php echo $_SESSION['username'];?></h2>
-                    <h3 class="location">Seoul</h3>
+                    <h3 class="location">Free User</h3>
                     <table>
                         <tr>
                             <td>
