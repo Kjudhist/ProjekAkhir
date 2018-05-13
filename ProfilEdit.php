@@ -79,7 +79,7 @@ session_start();
                                     <li>blog</li>
                                     <li>email</li>
                                     <li>Phone</li>
-                                    <li>Password</li>
+                                    <li>Confirm Password</li>
                                 </ul>
                             </td>
                             <td>
