@@ -105,44 +105,44 @@ div.portfoliocard ul.contact_information li:before {
 }
 .formDiv input[type="text"], .formDiv input[type="email"], .formDiv input[type="password"]
 , .formDiv input[type="name"] {
-  height: 25px;
-  width: 150px;
-  line-height: 25px;
-  font-weight: 300;
-  font-size: 15px;
-  color: rgb(255, 255, 255);
-  /* padding: 5px 0px; */
-  background-repeat: no-repeat;
-  cursor: default;
-  /*  */
-  background: transparent;
-  border: none;
-  box-sizing: border-box;
-  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.685);
-  font-weight: 500;
-  transition: 0.2s ease;
+    height: 25px;
+    width: 150px;
+    line-height: 25px;
+    font-weight: 300;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    /* padding: 5px 0px; */
+    background-repeat: no-repeat;
+    cursor: default;
+    /*  */
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.685);
+    font-weight: 500;
+    transition: 0.2s ease;
 }
 .formDiv input[type="text"]:focus, .formDiv input[type="email"]:focus, .formDiv input[type="password"]:focus {
-  box-shadow: inset 0 -2px 0 rgba(101, 255, 234, 0.486);
+    box-shadow: inset 0 -2px 0 rgba(101, 255, 234, 0.486);
 }
 .formDiv input[type="submit"] {
-  width: 100%;
-  padding: 10px 0;
-  color: #fff;
-  font-weight: 500;
-  border: none;
-  background: cadetblue;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: 0.2s ease;
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    background: cadetblue;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
 .formDiv input[type="submit"]:hover {
-  background: #2f5455;
+    background: #f00;
 }
 div.portfoliocard ul.information {
-  margin-top: 20px;
-  padding-left: 30px;
-  list-style-type: none;
+    margin-top: 20px;
+    padding-left: 30px;
+    list-style-type: none;
 }
 
 div.portfoliocard ul.information li {
