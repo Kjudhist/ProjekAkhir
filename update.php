@@ -11,13 +11,13 @@ if(isset($_POST['save'])){
         $phone      = $_POST['phone'];
         $password   = $_POST['password'];
 
-        $q=mysqli_query($con,"UPDATE user SET username='$username', blog='$blog', email='$email', phone='$phone', sandi='$password'where username='".$_SESSION['username']."'");
+        $q=mysqli_query($con,"UPDATE user SET username='$username', blog='$blog', email='$email', phone='$phone', sandi='$password' where username='".$_SESSION['username']."'");
         $r = mysqli_query($con, $q);
     }
     if($r){
-        header('location:loginRegister.php');
+        header('location:logout.php');
     }else{
-        header('location:profilEdit.php');
+        header('location:logout.php');
     }
 }   
 ?>
