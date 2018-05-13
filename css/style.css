@@ -53,6 +53,22 @@ section.sec1{
     background: url("../media/1.jpg");
     background-size: cover;
 }
+/* nav ul li:hover .sub1 {display:block}
+.sub1 {
+    display:none;
+    position: absolute;
+    line-height: 5px;
+    color: #262626;
+    padding: 50px 100px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.sub1 a:hover { 
+    color: #fff;
+    background: #f00;
+} */
 
 /*  */
 /*  */
