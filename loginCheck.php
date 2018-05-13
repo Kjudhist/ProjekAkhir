@@ -8,7 +8,7 @@ $login = mysqli_query($con,"select * from user where username='$username' and sa
 $cek = $login->fetch_object();
  
 if($cek){
-	header("location:header.php");
+	header("location:profile.php");
 }else{
 	header("location:loginRegister.php");	
 }

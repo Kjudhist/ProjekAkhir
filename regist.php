@@ -8,7 +8,7 @@ $pass = $_POST['password'];
  $input = mysqli_query($con,"INSERT INTO user VALUES ('$user','$email', '$pass')") or die(mysql_error());
  
  if($input){
-  header('location:header.php');
+  header('location:profile.php');
  }else{
   header('location:regist.php');
  }
