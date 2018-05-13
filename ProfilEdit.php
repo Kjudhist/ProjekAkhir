@@ -55,7 +55,7 @@ session_start();
                         <a href="#">Service</a>
                     </li>
                     <li>
-                        <a href="#">Profile</a>
+                        <a href="profile.php">Profile</a>
                     </li>
                 </ul>
             </nav>
