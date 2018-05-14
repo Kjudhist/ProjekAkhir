@@ -86,7 +86,7 @@ session_start();
                                 <ul class="contact_information">
 
                                     <li class="formDiv">
-                                        <input type="text" placeholder="<?php echo $_SESSION['username']?>" name="username"/></li>
+                                        <input type="text" placeholder="<?php echo $_SESSION['username']?>" name="username"/ required></li>
                                     <li class="formDiv">
                                         <input type="text" placeholder="<?php echo $_SESSION['blog']?>" name="blog"/></li>
                                     </li>
@@ -95,7 +95,7 @@ session_start();
                                     <li class="formDiv">
                                             <input type="text" placeholder="<?php echo $_SESSION['phone']?>" name="phone"/></li>
                                     <li class="formDiv">
-                                        <input type="password" placeholder="Password" name="password"/>
+                                        <input type="password" placeholder="Password" name="password"/ required>
                                     </li>
                                 </ul>
                             </td>
