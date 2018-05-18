@@ -91,6 +91,7 @@ include("koneksi.php");
                                 <ul class="information">
                                     <li>username</li>
                                     <li>blog</li>
+                                    <li>ttgl</li>
                                     <li>email</li>
                                     <li>phone</li>
                                 </ul>
@@ -101,6 +102,7 @@ include("koneksi.php");
                                     <li class="website">
                                         <a class="nostyle" href="#"><?=$_SESSION['blog'];?></a>
                                     </li>
+                                    <li class="ttgl"> </li>
                                     <li class="email"><?=$_SESSION['email'];?></li>
                                     <li class="phone"><?=$_SESSION['phone'];?></li>
                                 </ul>
