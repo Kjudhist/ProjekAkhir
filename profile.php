@@ -71,6 +71,11 @@ include("koneksi.php");
                             <a href="ProfilEdit.php" class="nostyle">Edit profile</a>
                         </div>
                     </div>
+                    <div>
+                        <div class="tombol">
+                            <a href="password.php" class="nostyle">Edit password</a>
+                        </div>
+                    </div>
                     <div class="tombollogout">
                         <div class="tombol">
                             <a href="logout.php" class="nostyle">Log out</a>

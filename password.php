@@ -1,3 +1,14 @@
+<?php
+include("koneksi.php");
+    session_start();
+    if (empty($_SESSION['username'])){
+        header("location:loginRegister.php");
+    }else{
+        $q=mysqli_query($con, "select * from user where username='".$_SESSION['username']."'");
+        $r=$q->fetch_array();
+        $_SESSION['sandi'] = $r['sandi'];
+    }
+?>
 <html>
 <head>
     <meta charset="utf-8">
@@ -53,20 +64,17 @@
                     <ul class="contact_information">
 
                         <li class="formDiv">
-                            <input type="password" placeholder="old Password" name="username" / required>
+                            <input type="password" placeholder="old Password" name="oldpass" / required>
                         </li>
                         <li class="formDiv">
-                            <input type="password" placeholder="new Password" name="blog" />
-                        </li>
-                        <li class="formDiv">
-                            <input type="password" placeholder="re-enter new password" name="email" />
+                            <input type="password" placeholder="new Password" name="newpass" />
                         </li>
                     </ul>
                 </div>
-                <form id="simpan" action="#" method="post">
+                <form id="simpan" action="passacc.php" method="post">
                     <div class="left_col">
                         <div class="formSimpan">
-                            <input type="submit" value="Save" />
+                            <input type="submit" value="Save" name="save"/>
                         </div>
                     </div>
                 </form>
