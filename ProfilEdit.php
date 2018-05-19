@@ -8,6 +8,7 @@ session_start();
         $r=$q->fetch_array();
         $_SESSION['blog'] = $r['blog'];
         $_SESSION['email'] = $r['email'];
+        $_SESSION['birthday'] = $r['birthday'];
         $_SESSION['phone'] = $r['phone'];
     }
 ?>
@@ -77,6 +78,7 @@ session_start();
                                 <ul class="information">
                                     <li>username</li>
                                     <li>blog</li>
+                                    <li>birthday</li>
                                     <li>email</li>
                                     <li>Phone</li>
                                     <li>Confirm Password</li>
@@ -89,6 +91,9 @@ session_start();
                                         <input type="text" placeholder="<?php echo $_SESSION['username']?>" name="username"/ required></li>
                                     <li class="formDiv">
                                         <input type="text" placeholder="<?php echo $_SESSION['blog']?>" name="blog"/></li>
+                                    </li>
+                                    <li class="formDiv">
+                                        <input type="text" placeholder="<?php echo $_SESSION['birthday']?>" name="birthday"/></li>
                                     </li>
                                     <li class="formDiv">
                                         <input type="email" placeholder="<?php echo $_SESSION['email']?>" name="email"/></li>

@@ -8,6 +8,7 @@ include("koneksi.php");
         $r=$q->fetch_array();
         $_SESSION['blog'] = $r['blog'];
         $_SESSION['email'] = $r['email'];
+        $_SESSION['birthday'] = $r['birthday'];
         $_SESSION['phone'] = $r['phone'];
     }
 ?>
@@ -96,7 +97,7 @@ include("koneksi.php");
                                 <ul class="information">
                                     <li>username</li>
                                     <li>blog</li>
-                                    <li>ttgl</li>
+                                    <li>birthday</li>
                                     <li>email</li>
                                     <li>phone</li>
                                 </ul>
@@ -107,7 +108,7 @@ include("koneksi.php");
                                     <li class="website">
                                         <a class="nostyle" href="#"><?=$_SESSION['blog'];?></a>
                                     </li>
-                                    <li class="ttgl"> </li>
+                                    <li class="birthday"><?=$_SESSION['birthday'];?> </li>
                                     <li class="email"><?=$_SESSION['email'];?></li>
                                     <li class="phone"><?=$_SESSION['phone'];?></li>
                                 </ul>

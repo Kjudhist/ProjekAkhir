@@ -1,10 +1,11 @@
 <?php
-include("koneksi.php");
+include ("koneksi.php");
 if(isset($_POST['save'])){
     $oldpass   = $_POST['oldpass'];
     $newpass   = $_POST['newpass'];
+    
     session_start();
-    $us = $_SESSION['username'];
+    $us=$_SESSION['username'];
     if (empty($_SESSION['username'])){
         header("location:password.php");
     }else{
@@ -16,6 +17,6 @@ if(isset($_POST['save'])){
     }else{
         header('location:profilEdit.php');
     }
-}   
+}  
 }
 ?>

@@ -1,12 +1,12 @@
 <?php
-include("koneksi.php");
+include ("koneksi.php");
     session_start();
     if (empty($_SESSION['username'])){
         header("location:loginRegister.php");
     }else{
         $q=mysqli_query($con, "select * from user where username='".$_SESSION['username']."'");
         $r=$q->fetch_array();
-        $_SESSION['sandi'] = $r['sandi'];
+        $_SESSION['password'] = $r['sandi'];
     }
 ?>
 <html>
@@ -60,18 +60,22 @@ include("koneksi.php");
         </div>
         <center>
             <div class="portfoliocard">
+            <form id="simpan" action="passacc.php" method="post">
                 <div class="up_col">
                     <ul class="contact_information">
-
                         <li class="formDiv">
-                            <input type="password" placeholder="old Password" name="oldpass" / required>
+                            <?php echo $_SESSION['username']?>
+                        </li>
+                        <li class="formDiv">
+                            <input type="password" placeholder="<?php echo $_SESSION['password']?>" name="oldpass"  required/>
                         </li>
                         <li class="formDiv">
                             <input type="password" placeholder="new Password" name="newpass" />
                         </li>
                     </ul>
                 </div>
-                <form id="simpan" action="passacc.php" method="post">
+            
+                
                     <div class="left_col">
                         <div class="formSimpan">
                             <input type="submit" value="Save" name="save"/>
