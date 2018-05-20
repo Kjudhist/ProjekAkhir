@@ -47,16 +47,16 @@ session_start();
                 </div>
                 <ul>
                     <li>
-                        <a href="#" class="active">Home</a>
+                        <a href="home.php">Home</a>
                     </li>
                     <li>
                         <a href="About.html">About</a>
                     </li>
                     <li>
-                        <a href="#">Service</a>
+                        <a href="upload.php">Upload</a>
                     </li>
                     <li>
-                    <a href="profile.php">Profile</a>
+                        <a href="profile.php" class="active">Profile</a>
                     </li>
                 </ul>
             </nav>

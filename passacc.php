@@ -10,13 +10,11 @@ if(isset($_POST['save'])){
         header("location:password.php");
     }else{
         $q=mysqli_query($con,"UPDATE user SET sandi='$newpass' where username='$us'");
-           
-    if($q){
-        
-        header('location:profile.php');
-    }else{
-        header('location:profilEdit.php');
-    }
-}  
+        if($q){
+            header('location:profile.php');
+        }else{
+            header('location:profilEdit.php');
+        }
+    }  
 }
 ?>

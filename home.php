@@ -1,19 +1,21 @@
 <?php
-include("koneksi.php");
-    session_start();
+include ("koneksi.php");
+session_start();
     if (empty($_SESSION['username'])){
         header("location:loginRegister.php");
     }else{
-        $q=mysqli_query($con, "select * from user where username='".$_SESSION['username']."'");
+        $q=mysqli_query($con, "select * from postingan where username='".$_SESSION['username']."'");
+        $r=$q->fetch_array();
+        $_SESSION['deskripsi'] = $r['deskripsi'];
+        $_SESSION['uploaded'] = $r['uploaded'];
     }
 ?>
-
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/styleDelete.css">
+    <link rel="stylesheet" type="text/css" href="css/styleProfilEdit.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700,800' rel='stylesheet'
         type='text/css'>
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -33,16 +35,17 @@ include("koneksi.php");
     </script>
     <title></title>
 </head>
+
 <body>
     <section class="sec1">
-        <div style="height: 40%">
+        <div style="height: 15%">
             <nav>
                 <div class="logo">
                     <img src="media/LogoColor.png">
                 </div>
                 <ul>
                     <li>
-                        <a href="home.php">Home</a>
+                        <a href="home.php" class="active">Home</a>
                     </li>
                     <li>
                         <a href="About.html">About</a>
@@ -51,33 +54,28 @@ include("koneksi.php");
                         <a href="upload.php">Upload</a>
                     </li>
                     <li>
-                        <a href="profile.php" class="active">Profile</a>
+                        <a href="profile.php">Profile</a>
                     </li>
                 </ul>
             </nav>
-        </div>
+        </div> 
         <center>
-        <div class="portfoliocard">
-            <div class="up_col">
-                <h1 style="color: white">DELETE</h1>
-                <h2 class="name"> apakah anda ingin menghapus akun "<?php echo $_SESSION['username'];?>" </h2>
-            </div>
-            <form id="delete" action="delacc.php" method="post">
-            <div class="left_col">
-                <div class="formHapus"><input type="submit" value="Hapus"/></div>
-            </div>
-            </form>
-            <form id="delete" action="profile.php" method="post">
-            <div class="right_col">
-                <div class="formBatal"><input type="submit" value="Tidak"/></div>
-            </div>
-            </form>
-        </div>
-        </center>
+        <table>
+            <tr>
+                <td>
+                    <center>
+                    <?php 
+                    echo $_SESSION['username']."<br>";
+                    echo $_SESSION['deskripsi']."<br>";
+                    ?>
+                    <img src ="<?php echo $_SESSION['uploaded'];?>" height=500 width=500>
+                </td>
+            </tr>
+        </table>
+    </center>
     </section>
     <section class="sec3"></section>
     <section class="sec4"></section>
     <section class="sec5"></section>
 </body>
-
 </html>
