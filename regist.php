@@ -5,7 +5,7 @@ $user = $_POST['username'];
 $email = $_POST['email'];
 $pass = $_POST['password'];
 
- $input = mysqli_query($con,"INSERT INTO user VALUES ('$user','$email', '$pass', NULL, NULL)") or die(mysql_error());
+ $input = mysqli_query($con,"INSERT INTO user VALUES ('$user','$email', '$pass', NULL, NULL, NULL)") or die(mysql_error());
  
  if($input){
     $username = $_POST['username'];
